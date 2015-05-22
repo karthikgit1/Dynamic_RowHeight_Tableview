@@ -15,6 +15,10 @@
 		26A6BF311B0F40FF00931F2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A6BF301B0F40FF00931F2B /* Images.xcassets */; };
 		26A6BF341B0F40FF00931F2B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26A6BF321B0F40FF00931F2B /* LaunchScreen.xib */; };
 		26A6BF401B0F410000931F2B /* Dynamic_Row_HeightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6BF3F1B0F410000931F2B /* Dynamic_Row_HeightTests.m */; };
+		26A6BF4A1B0F415600931F2B /* SourceCode.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 26A6BF491B0F415600931F2B /* SourceCode.rtfd */; };
+		26A6BF4C1B0F431200931F2B /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26A6BF4B1B0F431200931F2B /* quotes.plist */; };
+		26A6BF4F1B0F4AE400931F2B /* QuoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6BF4E1B0F4AE400931F2B /* QuoteTableViewCell.m */; };
+		26A6BF511B0F4DCA00931F2B /* icn.png in Resources */ = {isa = PBXBuildFile; fileRef = 26A6BF501B0F4DCA00931F2B /* icn.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,11 @@
 		26A6BF391B0F410000931F2B /* Dynamic_Row_HeightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dynamic_Row_HeightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A6BF3E1B0F410000931F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26A6BF3F1B0F410000931F2B /* Dynamic_Row_HeightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dynamic_Row_HeightTests.m; sourceTree = "<group>"; };
+		26A6BF491B0F415600931F2B /* SourceCode.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = SourceCode.rtfd; sourceTree = "<group>"; };
+		26A6BF4B1B0F431200931F2B /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
+		26A6BF4D1B0F4AE400931F2B /* QuoteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoteTableViewCell.h; sourceTree = "<group>"; };
+		26A6BF4E1B0F4AE400931F2B /* QuoteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoteTableViewCell.m; sourceTree = "<group>"; };
+		26A6BF501B0F4DCA00931F2B /* icn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,11 @@
 		26A6BF1F1B0F40FF00931F2B /* Dynamic_Row_Height */ = {
 			isa = PBXGroup;
 			children = (
+				26A6BF501B0F4DCA00931F2B /* icn.png */,
+				26A6BF4D1B0F4AE400931F2B /* QuoteTableViewCell.h */,
+				26A6BF4E1B0F4AE400931F2B /* QuoteTableViewCell.m */,
+				26A6BF4B1B0F431200931F2B /* quotes.plist */,
+				26A6BF491B0F415600931F2B /* SourceCode.rtfd */,
 				26A6BF241B0F40FF00931F2B /* AppDelegate.h */,
 				26A6BF251B0F40FF00931F2B /* AppDelegate.m */,
 				26A6BF2A1B0F40FF00931F2B /* ViewController.h */,
@@ -202,9 +216,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A6BF511B0F4DCA00931F2B /* icn.png in Resources */,
 				26A6BF2F1B0F40FF00931F2B /* Main.storyboard in Resources */,
+				26A6BF4A1B0F415600931F2B /* SourceCode.rtfd in Resources */,
 				26A6BF341B0F40FF00931F2B /* LaunchScreen.xib in Resources */,
 				26A6BF311B0F40FF00931F2B /* Images.xcassets in Resources */,
+				26A6BF4C1B0F431200931F2B /* quotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +241,7 @@
 			files = (
 				26A6BF261B0F40FF00931F2B /* AppDelegate.m in Sources */,
 				26A6BF291B0F40FF00931F2B /* Dynamic_Row_Height.xcdatamodeld in Sources */,
+				26A6BF4F1B0F4AE400931F2B /* QuoteTableViewCell.m in Sources */,
 				26A6BF2C1B0F40FF00931F2B /* ViewController.m in Sources */,
 				26A6BF231B0F40FF00931F2B /* main.m in Sources */,
 			);
@@ -350,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dynamic_Row_Height/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Dynamic_Row_Height/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
